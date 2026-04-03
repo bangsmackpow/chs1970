@@ -8,16 +8,16 @@ pages_build_output_dir = ".vercel/output/static"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "chs1970-classmates"
-database_id = "913c65e5-339b-4432-ac9a-c445064e2765"
+database_name = "chs1970-db"
+database_id = "1ab2e741-b12b-47d8-becf-fc2f57a34b86"
 migrations_dir = "migrations"
 
 [[r2_buckets]]
 binding = "R2_BUCKET"
-bucket_name = "chs1970-yearbook-scans"
+bucket_name = "chs1970-assets"
 
 [env.production.vars]
-CLOUDFLARE_ACCOUNT_ID = "YOUR_ACCOUNT_ID"
+CLOUDFLARE_ACCOUNT_ID = "0e528c886015cce349076fb7db222a88"
 
 [env.preview.vars]
-CLOUDFLARE_ACCOUNT_ID = "YOUR_ACCOUNT_ID"
+CLOUDFLARE_ACCOUNT_ID = "0e528c886015cce349076fb7db222a88"
