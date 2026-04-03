@@ -1,12 +1,16 @@
 {
-  "name": "chs1970-app",
+  "name": "chs1970-time-capsule",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:migrate": "wrangler d1 migrations apply chs1970-classmates --local",
+    "db:migrate:remote": "wrangler d1 migrations apply chs1970-classmates --remote",
+    "db:seed": "wrangler d1 execute chs1970-classmates --local --file=./seed-data.sql",
+    "db:seed:remote": "wrangler d1 execute chs1970-classmates --remote --file=./seed-data.sql"
   },
   "dependencies": {
     "next": "16.2.2",
@@ -14,6 +18,8 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250601.0",
+    "@opennextjs/cloudflare": "^1.18.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -21,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.0.0"
   }
 }
