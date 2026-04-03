@@ -1,23 +1,13 @@
-name = "chs1970-time-capsule"
-compatibility_date = "2025-06-01"
-compatibility_flags = ["nodejs_compat"]
-account_id = "82c24dfff13a954bd0319e2a3ca57b07"
+name = "chs1970"
+compatibility_date = "2024-04-01"
+pages_build_output_dir = ".vercel/output/static" # Or your specific build folder
 
-# Next.js Pages Functions use the _worker.js output
-pages_build_output_dir = ".vercel/output/static"
-
-[[d1_databases]]
+[env.production]
+[[env.production.d1_databases]]
 binding = "DB"
-database_name = "chs1970-db"
-database_id = "1ab2e741-b12b-47d8-becf-fc2f57a34b86"
-migrations_dir = "migrations"
+database_name = "chs1970_db" # Replace with your actual name
+database_id = "1ab2e741-b12b-47d8-becf-fc2f57a34b86" # Replace with your actual ID
 
-[[r2_buckets]]
-binding = "R2_BUCKET"
-bucket_name = "chs1970-assets"
-
-[env.production.vars]
-CLOUDFLARE_ACCOUNT_ID = "0e528c886015cce349076fb7db222a88"
-
-[env.preview.vars]
-CLOUDFLARE_ACCOUNT_ID = "0e528c886015cce349076fb7db222a88"
+[[env.production.r2_buckets]]
+binding = "BUCKET"
+bucket_name = "chs1970-assets" # Replace with your actual bucket name
