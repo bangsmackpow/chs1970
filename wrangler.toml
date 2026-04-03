@@ -1,13 +1,22 @@
 name = "chs1970"
 compatibility_date = "2024-04-01"
-pages_build_output_dir = ".vercel/output/static" # Or your specific build folder
+pages_build_output_dir = ".open-next" # Standard for @opennextjs/cloudflare
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chs1970-db"
+database_id = "1ab2e741-b12b-47d8-becf-fc2f57a34b86"
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "chs1970-assets"
 
 [env.production]
 [[env.production.d1_databases]]
 binding = "DB"
-database_name = "chs1970_db" # Replace with your actual name
-database_id = "1ab2e741-b12b-47d8-becf-fc2f57a34b86" # Replace with your actual ID
+database_name = "chs1970-db"
+database_id = "1ab2e741-b12b-47d8-becf-fc2f57a34b86"
 
 [[env.production.r2_buckets]]
-binding = "BUCKET"
-bucket_name = "chs1970-assets" # Replace with your actual bucket name
+binding = "R2_BUCKET"
+bucket_name = "chs1970-assets"

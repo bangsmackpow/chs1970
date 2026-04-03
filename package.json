@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "cf:build": "opennextjs-cloudflare",
     "start": "next start",
     "lint": "eslint",
     "db:migrate": "wrangler d1 migrations apply chs1970-classmates --local",
