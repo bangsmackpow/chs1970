@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import { getGalleryItems, getGalleryItemById } from '@/lib/r2-service'
 
 export async function GET(request: Request) {

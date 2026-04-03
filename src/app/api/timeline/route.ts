@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import { getTimelineEvents } from '@/lib/db-service'
 
 export async function GET(request: Request) {

@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import { getAllClassmates } from '@/lib/db-service'
 
 export async function GET() {

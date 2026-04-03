@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import { getCloudflareContext } from '@opennextjs/cloudflare'
 import { searchClassmates } from '@/lib/db-service'
 
