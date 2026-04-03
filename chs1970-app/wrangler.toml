@@ -1,0 +1,26 @@
+name = "chs1970"
+main = "src/app/worker.ts"
+compatibility_date = "2025-04-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chs1970-db"
+database_id = "replace-with-database-id-after-creation"
+
+# R2 bucket configuration for time capsule storage
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "chs1970-capsules"
+preview_bucket_name = "chs1970-capsules-preview"
+
+[env.production]
+# Production environment variables will be set in Cloudflare dashboard
+
+[env.preview]
+# Preview environment variables can be set here
+
+[vars]
+# Any global variables can be defined here
+
+[site]
+bucket = ".next/static"
