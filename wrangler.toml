@@ -1,6 +1,7 @@
 name = "chs1970"
-compatibility_date = "2024-04-01"
-pages_build_output_dir = ".open-next" # Standard for @opennextjs/cloudflare
+compatibility_date = "2024-11-18"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
 
 [[d1_databases]]
 binding = "DB"
