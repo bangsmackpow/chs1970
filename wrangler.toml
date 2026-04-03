@@ -1,0 +1,23 @@
+name = "chs1970-time-capsule"
+compatibility_date = "2025-06-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "82c24dfff13a954bd0319e2a3ca57b07"
+
+# Next.js Pages Functions use the _worker.js output
+pages_build_output_dir = ".vercel/output/static"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chs1970-classmates"
+database_id = "913c65e5-339b-4432-ac9a-c445064e2765"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "chs1970-yearbook-scans"
+
+[env.production.vars]
+CLOUDFLARE_ACCOUNT_ID = "YOUR_ACCOUNT_ID"
+
+[env.preview.vars]
+CLOUDFLARE_ACCOUNT_ID = "YOUR_ACCOUNT_ID"
